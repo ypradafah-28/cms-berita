@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <div id="flipbook" style="margin: 5px; ">
+        <div><img
+                src="https://statik.unesa.ac.id/profileunesa_konten_statik/uploads/humas/file/12805ca0-71a0-4f6b-9845-1b28f2de1d8b.jpg"
+                width="100%" height="100%" alt=""></div>
+        <div><img
+                src="https://statik.unesa.ac.id/profileunesa_konten_statik/uploads/humas/file/4a590cca-2ee1-4ded-9470-2cfc861c4956.jpg"
+                width="100%" height="100%" alt=""> </div>
+        <div> <img
+                src="https://statik.unesa.ac.id/profileunesa_konten_statik/uploads/humas/file/c220d678-f6c2-4480-8bcc-b0301181edcb.jpg"
+                width="100%" height="100%" alt=""></div>
+        <div><img
+                src="https://statik.unesa.ac.id/profileunesa_konten_statik/uploads/humas/file/674dc7b5-e2db-4770-8f84-433caeef5016.jpg"
+                width="100%" height="100%" alt=""></div>
+        <div> <img
+                src="https://statik.unesa.ac.id/profileunesa_konten_statik/uploads/humas/file/f411707f-5083-4aa7-9f0b-3fa4e6323067.jpg"
+                width="100%" height="100%" alt=""> </div>
+        <div></div>
+        <div></div>
+    </div>
+    <div>
+        <div class="flip-control" style="margin-left:250px; margin-top: 16px;">
+            <button class="btn-default btn-primary" style="padding: 5px; width: 50px; border: none; border-radius: 5px;" >
+                <a href="#" id="prev">
+                    <span style="color: azure;" class=" glyphicon glyphicon-backward"></span> </a>
+            </button>
+            <button class="btn-default btn-primary" style="padding: 5px; width: 50px; border: none; border-radius: 5px; ">
+                <a href="#" id="next">
+                    <span style="color: azure;" class=" glyphicon glyphicon-forward"></span> </a>
+            </button>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        var aksi = $('#flipbook').turn({
+            width: 600,
+            height: 400,
+            page: 1,
+            autoCenter: true,
+            duration: 1500,
+            next: true,
+        });
+        $("#prev").click(function (e) {
+            e.preventDefault();
+            aksi.turn("previous");
+        });
+
+        $("#next").click(function (e) {
+            e.preventDefault();
+            aksi.turn("next");
+        });
+
+
+    </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

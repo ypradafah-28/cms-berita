@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tes tabel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/css/dataTables.dataTables.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.5/js/dataTables.js"></script>
+
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js'></script>
+    <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <section
+        style=" display: grid; grid-template-columns: auto auto auto; padding: 20px; gap: 32px; width: 100%; background-color:#F8FAFC ;">
+
+        <section
+            onmouseover="this.style.transform='translateY(5px)'; this.style.boxShadow='0 10px 15px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.05)';"
+            style=" box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);; background-color:#fff; padding: 24px; display: grid; border-radius: 16px; transition: transform 0.2s ease-in-out;">
+            <section style="display: flex; align-items: center; justify-content: space-between; ">
+                <section>
+                    <p
+                        style="color: #1E293B;font-family:Arial; letter-spacing: 0.5; line-height: 1.5; font-size: 35px; font-weight: 800;">
+                        RENSTRA
+                    </p>
+                    <p style="font-family:Arial; letter-spacing: 0.5px; color: #64748B;">Rencana Strategi </p>
+
+                </section>
+                <i style="color: #1f1f1f; font-size: 40px;" class="fa-solid fa-briefcase"></i>
+            </section>
+            <section
+                style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; ">
+                <button style="visibility: hidden;"><a href="">Halo</a></button>
+                <a style="font-family: arial; text-decoration: none; border-radius: 12px; background-color: #201547; color: #fff; font-size: 15px; width: 100px; padding-top: 5px; padding-bottom: 5px; text-align: center;"
+                    href="https://ppid.unesa.ac.id/page/rencana-strategis-perguruan-tinggi">More Info</a>
+            </section>
+        </section>
+
+        <section
+            onmouseover="this.style.transform='translateY(5px)'; this.style.boxShadow='0 10px 15px rgba(0,0,0,0.1)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.05)';"
+            style=" box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);; background-color:#fff; padding: 24px; display: grid; border-radius: 16px; transition: transform 0.2s ease-in-out;">
+            <section style="display: flex; align-items: center; justify-content: space-between; ">
+                <section >
+                    <p
+                        style="color: #1E293B;font-family:Arial; letter-spacing: 0.5; line-height: 1.5; font-size: 35px; font-weight: 800;">
+                        PK
+                    </p>
+
+                    <p style="font-family:Arial; letter-spacing: 0.5px; color: #64748B;">Perjanjian Kinerja Rektor</p>
+
+                </section>
+                <i style="color: #1f1f1f; font-size: 40px;" class="fa-solid fa-handshake"></i>
+            </section>
+            <section
+                style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; ">
+                <button style="visibility: hidden;"><a href="">Halo</a></button>
+                <a style="font-family: arial; text-decoration: none; border-radius: 12px; background-color: #201547; color: #fff; font-size: 15px; width: 100px; padding-top: 5px; padding-bottom: 5px; text-align: center; "
+                    href="https://ppid.unesa.ac.id/page/daftar-perjanjian-kinerja-universitas-negeri-surabaya">More
+                    Info</a>
+            </section>
+        </section>
+
+        <section
+            style=" box-shadow: 2px 2px 5px rgba(32, 21, 71, 1); background-image: linear-gradient(180deg, rgba(32, 21, 71, 1), rgba(57, 38, 126, 1)); padding: 20px; display: grid; border-radius: 10px;">
+            <section style="display: flex; align-items: center; justify-content: space-between; ">
+                <section style="color: white;">
+                    <p
+                        style="font-family:Arial; letter-spacing: 0.5; line-height: 1.5; font-size: 35px; font-weight: 800;">
+                        RENAKSI
+                    </p>
+
+
+
+
+                    <p style="font-family:Arial; letter-spacing: 0.5px;">Rencana Aksi</p>
+
+
+
+
+                </section>
+                <i style="color: rgb(255, 255, 255); font-size: 40px;" class="fa-solid fa-file"></i>
+            </section>
+            <section
+                style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; ">
+                <button style="visibility: hidden;"><a href="">Halo</a></button>
+                <a style="font-family: arial; text-decoration: none; border-radius: 10px; color: white; font-size: 15px; width: 100px; padding-top: 5px; padding-bottom: 5px; text-align: center; border-style: solid; border-color: white;"
+                    href="https://ppid.unesa.ac.id/page/rencana-aksi">More Info</a>
+            </section>
+        </section>
+
+        <section
+            style=" box-shadow: 2px 2px 5px rgba(32, 21, 71, 1); background-image: linear-gradient(180deg, rgba(32, 21, 71, 1), rgba(57, 38, 126, 1)); padding: 20px; display: grid; border-radius: 10px;">
+            <section style="display: flex; align-items: center; justify-content: space-between; ">
+                <section style="color: white;">
+                    <p
+                        style="font-family:Arial; letter-spacing: 0.5; line-height: 1.5; font-size: 35px; font-weight: 800;">
+                        RKA
+                    </p>
+
+
+
+
+                    <p style="font-family:Arial; letter-spacing: 0.5px;">Rencana Kerja dan Anggaran</p>
+
+
+
+
+                </section>
+                <i style="color: rgb(255, 255, 255); font-size: 40px;" class="fa-solid fa-hand-holding-dollar"></i>
+            </section>
+            <section
+                style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; ">
+                <button style="visibility: hidden;"><a href="">Halo</a></button>
+                <a style="font-family: arial; text-decoration: none; border-radius: 10px; color: white; font-size: 15px; width: 100px; padding-top: 5px; padding-bottom: 5px; text-align: center; border-style: solid; border-color: white;"
+                    href="https://ppid.unesa.ac.id/page/rencana-kerja-dan-anggaran-2020">More Info</a>
+            </section>
+        </section>
+
+
+
+        <section
+            style=" box-shadow: 2px 2px 5px rgba(32, 21, 71, 1); background-image: linear-gradient(180deg, rgba(32, 21, 71, 1), rgba(57, 38, 126, 1)); padding: 20px; display: grid; border-radius: 10px;">
+            <section style="display: flex; align-items: center; justify-content: space-between; ">
+                <section style="color: white;">
+                    <p
+                        style="font-family:Arial; letter-spacing: 0.5; line-height: 1.5; font-size: 35px; font-weight: 800;">
+                        Pengukuran Kinerja <br> Triwulan
+                    </p>
+
+
+
+
+                    <p style="font-family:Arial; letter-spacing: 0.5px;"></p>
+
+
+
+
+                </section>
+                <i style="color: rgb(255, 255, 255); font-size: 40px;" class="fa-solid fa-file"></i>
+            </section>
+            <section
+                style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; ">
+                <button style="visibility: hidden;"><a href="">Halo</a></button>
+                <a style="font-family: arial; text-decoration: none; border-radius: 10px; color: white; font-size: 15px; width: 100px; padding-top: 5px; padding-bottom: 5px; text-align: center; border-style: solid; border-color: white;"
+                    href="https://ppid.unesa.ac.id/page/pengukuran-kinerja-triwulan">More Info</a>
+            </section>
+        </section>
+
+        <section
+            style=" box-shadow: 2px 2px 5px rgba(32, 21, 71, 1); background-image: linear-gradient(180deg, rgba(32, 21, 71, 1), rgba(57, 38, 126, 1)); padding: 20px; display: grid; border-radius: 10px;">
+            <section style="display: flex; align-items: center; justify-content: space-between; ">
+                <section style="color: white;">
+                    <p
+                        style="font-family:Arial; letter-spacing: 0.5; line-height: 1.5; font-size: 35px; font-weight: 800;">
+                        LAKIN
+                    </p>
+
+
+
+
+                    <p style="font-family:Arial; letter-spacing: 0.5px;">Laporan Kinerja</p>
+
+
+
+
+                </section>
+                <i style="color: rgb(255, 255, 255); font-size: 40px;" class="fa-solid fa-file"></i>
+            </section>
+            <section
+                style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; ">
+                <button style="visibility: hidden;"><a href="">Halo</a></button>
+                <a style="font-family: arial; text-decoration: none; border-radius: 10px; color: white; font-size: 15px; width: 100px; padding-top: 5px; padding-bottom: 5px; text-align: center; border-style: solid; border-color: white;"
+                    href="https://ppid.unesa.ac.id/page/laporan-kinerja-unesa-2019">More Info</a>
+            </section>
+        </section>
+
+
+        <section
+            style=" box-shadow: 2px 2px 5px rgba(32, 21, 71, 1); background-image: linear-gradient(180deg, rgba(32, 21, 71, 1), rgba(57, 38, 126, 1)); padding: 20px; display: grid; border-radius: 10px;">
+            <section style="display: flex; align-items: center; justify-content: space-between; ">
+                <section style="color: white;">
+                    <p
+                        style="font-family:Arial; letter-spacing: 0.5; line-height: 1.5; font-size: 35px; font-weight: 800;">
+                        LHE
+                    </p>
+
+
+
+
+                    <p style="font-family:Arial; letter-spacing: 0.5px;">Laporan Hasil Evaluasi</p>
+
+
+
+
+                </section>
+                <i style="color: rgb(255, 255, 255); font-size: 40px;" class="fa-solid fa-file"></i>
+            </section>
+            <section
+                style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; ">
+                <button style="visibility: hidden;"><a href="">Halo</a></button>
+                <a style="font-family: arial; text-decoration: none; border-radius: 10px; color: white; font-size: 15px; width: 100px; padding-top: 5px; padding-bottom: 5px; text-align: center; border-style: solid; border-color: white;"
+                    href="https://ppid.unesa.ac.id/page/laporan-hasil-evaluasi">More Info</a>
+            </section>
+        </section>
+
+        <section
+            style=" box-shadow: 2px 2px 5px rgba(32, 21, 71, 1); background-image: linear-gradient(180deg, rgba(32, 21, 71, 1), rgba(57, 38, 126, 1)); padding: 20px; display: grid; border-radius: 10px;">
+            <section style="display: flex; align-items: center; justify-content: space-between; ">
+                <section style="color: white;">
+                    <p
+                        style="font-family:Arial; letter-spacing: 0.5; line-height: 1.5; font-size: 35px; font-weight: 800;">
+                        POS
+                    </p>
+
+
+
+
+                    <p style="font-family:Arial; letter-spacing: 0.5px;">Prosedur Operasional Standar</p>
+
+
+
+
+                </section>
+                <i style="color: rgb(255, 255, 255); font-size: 40px;" class="fa-solid fa-pen-to-square"></i>
+            </section>
+            <section
+                style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; ">
+                <button style="visibility: hidden;"><a href="">Halo</a></button>
+                <a style="font-family: arial; text-decoration: none; border-radius: 10px; color: white; font-size: 15px; width: 100px; padding-top: 5px; padding-bottom: 5px; text-align: center; border-style: solid; border-color: white;"
+                    href="https://ppid.unesa.ac.id/page/prosedur-operasional-standar">More Info</a>
+            </section>
+        </section>
+
+        <section
+            style=" box-shadow: 2px 2px 5px rgba(32, 21, 71, 1); background-image: linear-gradient(180deg, rgba(32, 21, 71, 1), rgba(57, 38, 126, 1)); padding: 20px; display: grid; border-radius: 10px;">
+            <section style="display: flex; align-items: center; justify-content: space-between; ">
+                <section style="color: white;">
+                    <p
+                        style="font-family:Arial; letter-spacing: 0.5; line-height: 1.5; font-size: 35px; font-weight: 800;">
+                        Pedoman
+                    </p>
+
+
+
+
+                    <p style="font-family:Arial; letter-spacing: 0.5px;"></p>
+
+
+
+
+                </section>
+                <i style="color: rgb(255, 255, 255); font-size: 40px;" class="fa-solid fa-folder"></i>
+            </section>
+            <section
+                style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; ">
+                <button style="visibility: hidden;"><a href="">Halo</a></button>
+                <a style="font-family: arial; text-decoration: none; border-radius: 10px; color: white; font-size: 15px; width: 100px; padding-top: 5px; padding-bottom: 5px; text-align: center; border-style: solid; border-color: white;"
+                    href="https://ppid.unesa.ac.id/page/dokumen-pedoman">More Info</a>
+            </section>
+        </section>
+        <section
+            style=" box-shadow: 2px 2px 5px rgba(32, 21, 71, 1); background-image: linear-gradient(180deg, rgba(32, 21, 71, 1), rgba(57, 38, 126, 1)); padding: 20px; display: grid; border-radius: 10px;">
+            <section style="display: flex; align-items: center; justify-content: space-between; ">
+                <section style="color: white;">
+                    <p
+                        style="font-family:Arial; letter-spacing: 0.5; line-height: 1.5; font-size: 35px; font-weight: 800;">
+                        SK dan PERTOR
+                    </p>
+
+
+
+
+                    <p style="font-family:Arial; letter-spacing: 0.5px;">Surat Keputusan dan <br> Peraturan Rektor</p>
+
+
+
+
+                </section>
+                <i style="color: rgb(255, 255, 255); font-size: 40px;" class="fa-solid fa-file"></i>
+            </section>
+            <section
+                style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; ">
+                <button style="visibility: hidden;"><a href="">Halo</a></button>
+                <a style="font-family: arial; text-decoration: none; border-radius: 10px; color: white; font-size: 15px; width: 100px; padding-top: 5px; padding-bottom: 5px; text-align: center; border-style: solid; border-color: white;"
+                    href="https://ppid.unesa.ac.id/page/dokumen-sk-dan-pertor">More Info</a>
+            </section>
+        </section>
+        <section
+            style=" box-shadow: 2px 2px 5px rgba(32, 21, 71, 1); background-image: linear-gradient(180deg, rgba(32, 21, 71, 1), rgba(57, 38, 126, 1)); padding: 20px; display: grid; border-radius: 10px;">
+            <section style="display: flex; align-items: center; justify-content: space-between; ">
+                <section style="color: white;">
+                    <p
+                        style="font-family:Arial; letter-spacing: 0.5; line-height: 1.5; font-size: 35px; font-weight: 800;">
+                        Pohon Kinerja
+                    </p>
+
+
+
+
+                    <p style="font-family:Arial; letter-spacing: 0.5px;"></p>
+
+
+
+
+                </section>
+                <i style="color: rgb(255, 255, 255); font-size: 40px;" class="fa-solid fa-file"></i>
+            </section>
+            <section
+                style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; padding-bottom: 10px; ">
+                <button style="visibility: hidden;"><a href="">Halo</a></button>
+                <a style="font-family: arial; text-decoration: none; border-radius: 10px; color: white; font-size: 15px; width: 100px; padding-top: 5px; padding-bottom: 5px; text-align: center; border-style: solid; border-color: white;"
+                    href="https://ppid.unesa.ac.id/page/pohon-kinerja">More Info</a>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
